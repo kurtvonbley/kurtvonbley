@@ -1,157 +1,305 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>CV – Kurt von Bley</title>
+  <meta charset="UTF-8">
+  <title>CV – Kurt von Bley</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+  <style>
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      background: white;
+      color: #111;
+      margin: 0;
+    }
 
-body{
-font-family: Helvetica, Arial, sans-serif;
-background:white;
-color:#111;
-margin:0;
-}
+    .container {
+      max-width: 860px;
+      margin: 80px auto;
+      padding: 40px;
+    }
 
-.container{
-max-width:720px;
-margin:80px auto;
-padding:40px;
-}
+    nav {
+      margin-bottom: 30px;
+      font-size: 15px;
+    }
 
-nav{
-margin-bottom:30px;
-font-size:15px;
-}
+    nav a {
+      text-decoration: none;
+      color: #111;
+      margin-right: 20px;
+    }
 
-nav a{
-text-decoration:none;
-color:#111;
-margin-right:20px;
-}
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-nav a:hover{
-text-decoration:underline;
-}
+    h1 {
+      font-weight: 400;
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
 
-h1{
-font-weight:400;
-font-size:36px;
-margin-bottom:25px;
-}
+    .intro {
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
 
-h2{
-font-weight:400;
-font-size:15px;
-margin-top:40px;
-margin-bottom:15px;
-color:#666;
-}
+    .cv-section {
+      margin-top: 40px;
+    }
 
-p{
-line-height:1.6;
-margin-bottom:12px;
-}
+    .cv-heading {
+      font-weight: 400;
+      font-size: 15px;
+      margin-bottom: 15px;
+      color: #666;
+    }
 
-.year{
-display:inline-block;
-width:110px;
-white-space:nowrap;
-color:#666;
-}
+    .cv-row {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      column-gap: 22px;
+      align-items: start;
+      margin-bottom: 12px;
+    }
 
-a{
-color:#111;
-text-decoration:none;
-border-bottom:1px solid #aaa;
-}
+    .cv-year {
+      color: #666;
+      white-space: nowrap;
+      line-height: 1.6;
+    }
 
-a:hover{
-border-bottom:1px solid #111;
-}
+    .cv-text {
+      line-height: 1.6;
+    }
 
-footer{
-margin-top:90px;
-color:#777;
-font-size:13px;
-}
+    a {
+      color: #111;
+      text-decoration: none;
+      border-bottom: 1px solid #aaa;
+    }
 
-</style>
+    a:hover {
+      border-bottom: 1px solid #111;
+    }
 
+    footer {
+      margin-top: 90px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 24px;
+        margin: 40px auto;
+      }
+
+      .cv-row {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        margin-bottom: 14px;
+      }
+
+      .cv-year {
+        margin-bottom: 2px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
 
-<div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cv.html" style="text-decoration: underline;">CV</a>
+      <a href="text.html">Text</a>
+      <a href="https://instagram.com/kurtvonbley" target="_blank">Instagram</a>
+    </nav>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="cv.html" style="text-decoration:underline;">CV</a>
-<a href="text.html">Text</a>
-<a href="https://instagram.com/kurtvonbley" target="_blank">Instagram</a>
-</nav>
+    <h1>Kurt von Bley</h1>
 
-<h1>Kurt von Bley</h1>
+    <div class="intro">
+      *1976, Königshütte / O.S. (Chorzów, Poland)
+    </div>
 
-<p>*1976, Königshütte / O.S. (Chorzów, Poland)</p>
+    <div class="cv-section">
+      <div class="cv-heading">Education</div>
 
-<h2>Education</h2>
+      <div class="cv-row">
+        <div class="cv-year">since 2021</div>
+        <div class="cv-text">Universität der Künste Berlin (UdK), Class of Prof. Thomas Zipp</div>
+      </div>
 
-<p><span class="year">since 2021</span> Universität der Künste Berlin (UdK), Class of Prof. Thomas Zipp</p>
-<p><span class="year">1998–2003</span> Rheinische Friedrich-Wilhelms-Universität Bonn, Slavic Philology, Comparative Literature, Philosophy</p>
+      <div class="cv-row">
+        <div class="cv-year">1998–2003</div>
+        <div class="cv-text">Rheinische Friedrich-Wilhelms-Universität Bonn, Slavic Philology, Comparative Literature, Philosophy</div>
+      </div>
+    </div>
 
-<h2>Solo Exhibitions</h2>
+    <div class="cv-section">
+      <div class="cv-heading">Solo Exhibitions</div>
 
-<p><span class="year">2026</span> Nizza, Berlin — with Reinert Keuter</p>
-<p><span class="year">2025</span> Raum Linksrechts, Hamburg — with Greta Wildhage</p>
-<p><span class="year">2024</span> Mouches Volantes, Cologne</p>
-<p><span class="year">2020</span> Kunstraum R52L, Berlin</p>
-<p><span class="year">2019</span> Spiritual Ground, LVR Museum Abtei Brauweiler</p>
-<p><span class="year">2016</span> Visual Kontakt Gallery, Cluj-Napoca</p>
-<p><span class="year"></span> WE Gallery, Berlin</p>
-<p><span class="year"></span> Polish Institute, Berlin & Warsaw</p>
-<p><span class="year">2010</span> Traumata Gallery, Bonn</p>
+      <div class="cv-row">
+        <div class="cv-year">2026</div>
+        <div class="cv-text">Nizza, Berlin — with Reinert Keuter</div>
+      </div>
 
-<h2>Selected Group Exhibitions</h2>
+      <div class="cv-row">
+        <div class="cv-year">2025</div>
+        <div class="cv-text">Raum Linksrechts, Hamburg — with Greta Wildhage</div>
+      </div>
 
-<p><span class="year">2026</span> UdK x Berlin, Masumi Space, Berlin</p>
-<p><span class="year">2025</span> Neuer Aachener Kunstverein, Aachen</p>
-<p><span class="year"></span> Salty Acid Space, Berlin</p>
-<p><span class="year"></span> Karl Hofer Gesellschaft – UdK Berlin</p>
-<p><span class="year">2024</span> West Germany, Berlin</p>
-<p><span class="year"></span> HilbertRaum, Berlin</p>
-<p><span class="year"></span> Samuelis Baumgarte Galerie, Bielefeld</p>
-<p><span class="year"></span> IAGA Contemporary, Cluj-Napoca</p>
-<p><span class="year">2023</span> Instinct #12, Village Berlin</p>
+      <div class="cv-row">
+        <div class="cv-year">2024</div>
+        <div class="cv-text">Mouches Volantes, Cologne</div>
+      </div>
 
-<h2>Art Fairs</h2>
+      <div class="cv-row">
+        <div class="cv-year">2020</div>
+        <div class="cv-text">Kunstraum R52L, Berlin</div>
+      </div>
 
-<p><span class="year">2024</span> POSITIONS Berlin Art Fair</p>
-<p><span class="year">2023</span> ART COLOGNE</p>
-<p><span class="year">2016</span> SCOPE Art Fair, Basel</p>
+      <div class="cv-row">
+        <div class="cv-year">2019</div>
+        <div class="cv-text">Spiritual Ground, LVR Museum Abtei Brauweiler</div>
+      </div>
 
-<h2>Residencies</h2>
+      <div class="cv-row">
+        <div class="cv-year">2016</div>
+        <div class="cv-text">Visual Kontakt Gallery, Cluj-Napoca</div>
+      </div>
 
-<p><span class="year">2023</span> UdK Ceramics Workshop, Zlatibor</p>
-<p><span class="year">2016</span> Visual Kontakt Gallery, Cluj-Napoca</p>
+      <div class="cv-row">
+        <div class="cv-year"></div>
+        <div class="cv-text">WE Gallery, Berlin</div>
+      </div>
 
-<h2>Nominations</h2>
+      <div class="cv-row">
+        <div class="cv-year"></div>
+        <div class="cv-text">Polish Institute, Berlin &amp; Warsaw</div>
+      </div>
 
-<p><span class="year">2025</span> Wolfram Beck Stiftung Prize for Sculpture</p>
-<p><span class="year"></span> IBB Prize for Photography</p>
+      <div class="cv-row">
+        <div class="cv-year">2010</div>
+        <div class="cv-text">Traumata Gallery, Bonn</div>
+      </div>
+    </div>
 
-<h2>Contact</h2>
+    <div class="cv-section">
+      <div class="cv-heading">Selected Group Exhibitions</div>
 
-<p>
-<a href="mailto:mail@kurtvonbley.com">mail@kurtvonbley.com</a><br>
-<a href="https://instagram.com/kurtvonbley" target="_blank">instagram.com/kurtvonbley</a>
-</p>
+      <div class="cv-row">
+        <div class="cv-year">2026</div>
+        <div class="cv-text">UdK x Berlin, Masumi Space, Berlin</div>
+      </div>
 
-<footer>
-© Kurt von Bley
-</footer>
+      <div class="cv-row">
+        <div class="cv-year">2025</div>
+        <div class="cv-text">Neuer Aachener Kunstverein, Aachen</div>
+      </div>
 
-</div>
+      <div class="cv-row">
+        <div class="cv-year"></div>
+        <div class="cv-text">Salty Acid Space, Berlin</div>
+      </div>
 
+      <div class="cv-row">
+        <div class="cv-year"></div>
+        <div class="cv-text">Karl Hofer Gesellschaft – UdK Berlin</div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-year">2024</div>
+        <div class="cv-text">West Germany, Berlin</div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-year"></div>
+        <div class="cv-text">HilbertRaum, Berlin</div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-year"></div>
+        <div class="cv-text">Samuelis Baumgarte Galerie, Bielefeld</div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-year"></div>
+        <div class="cv-text">IAGA Contemporary, Cluj-Napoca</div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-year">2023</div>
+        <div class="cv-text">Instinct #12, Village Berlin</div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <div class="cv-heading">Art Fairs</div>
+
+      <div class="cv-row">
+        <div class="cv-year">2024</div>
+        <div class="cv-text">POSITIONS Berlin Art Fair</div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-year">2023</div>
+        <div class="cv-text">ART COLOGNE</div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-year">2016</div>
+        <div class="cv-text">SCOPE Art Fair, Basel</div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <div class="cv-heading">Residencies</div>
+
+      <div class="cv-row">
+        <div class="cv-year">2023</div>
+        <div class="cv-text">UdK Ceramics Workshop, Zlatibor</div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-year">2016</div>
+        <div class="cv-text">Visual Kontakt Gallery, Cluj-Napoca</div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <div class="cv-heading">Nominations</div>
+
+      <div class="cv-row">
+        <div class="cv-year">2025</div>
+        <div class="cv-text">Wolfram Beck Stiftung Prize for Sculpture</div>
+      </div>
+
+      <div class="cv-row">
+        <div class="cv-year"></div>
+        <div class="cv-text">IBB Prize for Photography</div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <div class="cv-heading">Contact</div>
+
+      <div class="cv-row">
+        <div class="cv-year"></div>
+        <div class="cv-text">
+          <a href="mailto:mail@kurtvonbley.com">mail@kurtvonbley.com</a><br>
+          <a href="https://instagram.com/kurtvonbley" target="_blank">instagram.com/kurtvonbley</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © Kurt von Bley
+    </footer>
+
+  </div>
 </body>
 </html>
